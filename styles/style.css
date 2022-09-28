@@ -14,7 +14,7 @@ body {
 }
 
 main {
-  padding: 5% 2%;
+  padding: 5% 4%;
 }
 
 .card {
@@ -42,6 +42,7 @@ main {
 }
 .card .title {
   font-family: "Fraunces", serif;
+  max-width: 200px;
   font-weight: bold;
   font-size: 32px;
   color: #1c232b;
@@ -77,6 +78,9 @@ main {
   cursor: pointer;
   font-weight: 700;
 }
+.buy:hover {
+  background: #194230;
+}
 
 @media (max-width: 600px) {
   .card {
@@ -85,8 +89,20 @@ main {
   .card__img {
     display: none;
   }
+  .card .title {
+    max-width: 280px;
+  }
+  .card .subtitle {
+    line-height: 1.5;
+  }
   .card .mobile {
     display: block;
     width: 100%;
+  }
+  .card__text {
+    gap: 1rem;
+  }
+  .card .buy {
+    padding: 1rem 0;
   }
 }/*# sourceMappingURL=style.css.map */
